@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "ospedali",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Nome": "Aurelia Hospital", "Indirizzo": "Via Aurelia 860 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.398313, 41.8870947, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "C.T.O. Andrea Alesini", "Indirizzo": "Via San Nemesio 21 - Roma", "Tipologia": "PS" }, "geometry": { "type": "Point", "coordinates": [ 12.4869268, 41.8582933, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Pediatrico Bambino Gesù", "Indirizzo": "Piazza Sant'Onofrio 4 - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.4605842, 41.8974184, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Cristo Re", "Indirizzo": "Via delle Calasanziane 25 - Roma", "Tipologia": "PS" }, "geometry": { "type": "Point", "coordinates": [ 12.4208044, 41.9176657, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale G. Battista Grassi", "Indirizzo": "Via Gian Carlo Passeroni 28 - Ostia", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.2994175, 41.7288886, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Madre G. Vannini", "Indirizzo": "Via di Acqua Bullicante 4 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.5431593, 41.8811341, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Camillo-Forlanini", "Indirizzo": "Circonvallazione Gianicolense 87 - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.4555691, 41.870378, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Filippo Neri", "Indirizzo": "Via Giovanni Martinotti 20 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.4140435, 41.9469231, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Giovanni Addolorata", "Indirizzo": "Via dell'Amba Aradam 9 - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.5013474, 41.8843866, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Giovanni Calibita-FBF", "Indirizzo": "Via di Ponte Quattro Capi 39 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.4770227, 41.8909897, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Sandro Pertini", "Indirizzo": "Via dei Monti Tiburtini 385/389 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.5389903, 41.9191725, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Sant'Andrea", "Indirizzo": "Via di Grottarossa 1035/1039 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.4701182, 41.9830864, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Sant'Eugenio", "Indirizzo": "Piazzale dell'Umanesimo 10 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.471681, 41.8222695, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Pietro - FBF", "Indirizzo": "Via Cassia, 600 - 00189 Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.448527, 41.9626256, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Santo Spirito", "Indirizzo": "Lungotevere in Sassia 1 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.4630078, 41.9002846, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Policlinico Casilino", "Indirizzo": "Via Casilina 1040 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.5883847, 41.8675008, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Policlinico Universitario A. Gemelli", "Indirizzo": "Largo Agostino Gemelli 8 - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.4296399, 41.9298722, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Policlinico Universitario Campus Bio-Medico", "Indirizzo": "Via Álvaro del Portillo, 192 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.4673285, 41.7711621, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Policlinico Universitario Tor Vergata", "Indirizzo": "Viale Oxford 81 - Roma", "Tipologia": "DEA I" }, "geometry": { "type": "Point", "coordinates": [ 12.6309504, 41.8592069, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Policlinico Universitario Umberto I", "Indirizzo": "Viale del Policlinico 155 - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.5098383, 41.9064867, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Oftalmico", "Indirizzo": "Via Vittor Pisani, 15 - Roma", "Tipologia": "PS" }, "geometry": { "type": "Point", "coordinates": [ 12.4490071, 41.9079892, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale Pediatrico Bambino Gesù", "Indirizzo": "via della Torre di Palidoro - Fiumicino - Roma", "Tipologia": "DEA II" }, "geometry": { "type": "Point", "coordinates": [ 12.1542907, 41.9210267, 0.0 ] } },
+{ "type": "Feature", "properties": { "Nome": "Ospedale San Carlo di Nancy", "Indirizzo": "Via Aurelia, 275, 00165 Roma RM", "Tipologia": "PS" }, "geometry": { "type": "Point", "coordinates": [ 12.4386278, 41.8981753, 0.0 ] } }
+]
+}

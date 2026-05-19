@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa Comitati</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── SIDEBAR ───────────────────────────────────────────────────── -->
+  <nav id="sidebar" class="sidebar open">
+    <div class="sb-head">
+      <div class="brand">
+        <div>
+          <div class="brand-title">Mappa Territori CRI e ASL</div>
+        </div>
+      </div>
+      <button id="btn-sb-close" class="btn-icon" title="Chiudi pannello">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="sb-body">
+
+      <!-- Basemaps -->
+      <section class="sb-section">
+        <div class="sb-section-title">Mappa di base</div>
+        <div class="bm-grid" id="bm-grid">
+          <button class="bm-btn active" data-bm="white">
+            <div class="bm-thumb" style="background:#f5f5f5; border:1px solid #bbb;"></div>
+            <span>Bianco</span>
+          </button>
+          <button class="bm-btn" data-bm="streets">
+            <div class="bm-thumb" style="background:linear-gradient(135deg,#c5dcab 0%,#a8c5dc 50%,#d5cfc3 100%);"></div>
+            <span>Strade</span>
+          </button>
+          <button class="bm-btn" data-bm="satellite">
+            <div class="bm-thumb" style="background:linear-gradient(135deg,#1b3a1b 0%,#2d5c2d 45%,#3a752e 100%);"></div>
+            <span>Satellite</span>
+          </button>
+          <button class="bm-btn" data-bm="topo">
+            <div class="bm-thumb" style="background:linear-gradient(135deg,#e6dcc6 0%,#c8b48a 55%,#a08060 100%);"></div>
+            <span>Topografica</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Admin polygon layers -->
+      <section class="sb-section">
+        <div class="sb-section-title">Confini amministrativi</div>
+        <div id="layer-admin" class="layer-group"></div>
+      </section>
+
+      <!-- Operational polygon layers -->
+      <section class="sb-section">
+        <div class="sb-section-title">Aree operative</div>
+        <div id="layer-ops" class="layer-group"></div>
+      </section>
+
+      <!-- Point layers -->
+      <section class="sb-section">
+        <div class="sb-section-title">Punti di interesse</div>
+        <div id="layer-poi" class="layer-group"></div>
+      </section>
+
+    </div>
+
+  </nav>
+
+  <!-- ── TOP BAR + MAP AREA ─────────────────────────────────────── -->
+  <div id="map-area">
+
+    <div id="top-bar">
+      <button id="btn-sb-open" class="btn-menu hidden" title="Apri pannello livelli">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <div class="search-wrap" id="search-wrap">
+        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input id="search-input" type="search" placeholder="Cerca indirizzo" autocomplete="off" spellcheck="false">
+        <button id="btn-search-clear" class="btn-search-x hidden" title="Cancella">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search dropdown -->
+    <div id="search-dropdown" class="search-dropdown hidden"></div>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Info panel -->
+    <div id="info-panel" class="info-panel hidden">
+      <div class="ip-head">
+        <div class="ip-head-left">
+          <svg class="ip-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span id="ip-title">Posizione</span>
+        </div>
+        <button id="btn-ip-close" class="btn-icon" title="Chiudi">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="ip-body" class="ip-body"></div>
+    </div>
+
+  </div>
+
+  <!-- Loading overlay -->
+  <div id="loading" class="loading-overlay hidden">
+    <div class="loading-ring"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
