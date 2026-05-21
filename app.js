@@ -38,6 +38,16 @@ const LAYER_DEFS = [
     style: { color: '#d97706', weight: 0.9, fillOpacity: 0, opacity: 0.8 },
     defaultOn: false
   },
+    {
+    id: 'municipi_roma',
+    name: 'Municipi di Roma',
+    file: 'municipi.geojson',
+    type: 'polygon',
+    group: 'admin',
+    color: '#d97706',
+    style: { color: '#d97706', weight: 0.9, fillOpacity: 0, opacity: 0.8 },
+    defaultOn: false
+  },
   // ── Polygon: Operative ───────────────────────────────────────
   {
     id: 'comitati_cri',
